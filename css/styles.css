@@ -32,15 +32,19 @@ h3 {
     font-size: 1.5rem;
 }
 
+p {
+    color: #8f8f8f;
+}
+
 .container-fluid {
-    padding: 3% 15%;
+    padding: 3% 15% 7%;
 }
 
 
 /* Navigation Bar */
 
 .navbar {
-    padding-bottom: 4.5rem;
+    padding: 0 0 4.5rem;
 }
 
 .navbar-brand {
@@ -69,22 +73,29 @@ h3 {
 
 /* Title Image */
 
+.title-img-div {
+    position: relative;
+}
+
 .title-image {
     width: 60%;
     transform: rotate(25deg);
-    margin-left: 20%;
+    position: absolute;
+    right: 30%;
 }
 
 
 /* Features section */
 
 #features {
-    text-align: center;
     padding: 7% 15%;
+    background-color: white;
+    position: relative;
 }
 
 .feature {
-    padding: 3rem;
+    text-align: center;
+    padding: 4.5%;
 }
 
 .feature-icons {
@@ -97,9 +108,6 @@ h3 {
     color: #ff4c68;
 }
 
-#features p {
-    color: #8f8f8f;
-}
 
 
 /* Testimonial section */
@@ -140,4 +148,50 @@ h3 {
 
 .pricing-col {
     padding: 3% 2%;
+}
+
+
+/* Call to Action Section */
+
+#cta {
+    color: #ffffff;
+    background-color: #ff4c68;
+    text-align: center;
+    padding: 5% 15% 3%;
+}
+
+#cta h3 {
+    font-size: 3rem;
+}
+
+/* Footer Section */
+
+#footer {
+    text-align: center;
+    background-color: #ffffff;
+    margin: 5% 0;
+}
+
+#footer i {
+    margin: 0 .5rem 1.25rem;
+}
+
+#footer a {
+    color: #8f8f8f;
+}
+
+#footer a:hover {
+    color: #6b6b6b;
+}
+
+
+@media screen and (max-width: 1028px) {
+    
+    .title-image {
+        position: static;
+        transform: rotate(0deg);
+    }
+    #title {
+        text-align: center;
+    }
 }
